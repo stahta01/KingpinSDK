@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="KingpinSDK" />
+		<Option pch_mode="2" />
+		<Option compiler="msvctk" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/gamex86" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="msvctk" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DBUILD_DLL" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="/def:..\game.def" />
+					<Add library="NavLib.lib" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Linker>
+			<Add directory="../sdk/gamesrc/NavLib" />
+		</Linker>
+		<Unit filename="../sdk/gamesrc/AI_BITCH.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/AI_BITCH.H" />
+		<Unit filename="../sdk/gamesrc/AI_DOG.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/AI_DOG.H" />
+		<Unit filename="../sdk/gamesrc/AI_PUNK.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/AI_PUNK.H" />
+		<Unit filename="../sdk/gamesrc/AI_RUNT.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/AI_RUNT.H" />
+		<Unit filename="../sdk/gamesrc/AI_THUG.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/AI_THUG.H" />
+		<Unit filename="../sdk/gamesrc/AI_THUG2.H" />
+		<Unit filename="../sdk/gamesrc/AI_WHORE.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/AI_WHORE.H" />
+		<Unit filename="../sdk/gamesrc/EP_ALL.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/EP_ALL.H" />
+		<Unit filename="../sdk/gamesrc/EP_LOG.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/EP_LOG.H" />
+		<Unit filename="../sdk/gamesrc/GAME.H" />
+		<Unit filename="../sdk/gamesrc/G_AI.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_AI.H" />
+		<Unit filename="../sdk/gamesrc/G_CAST.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_CHASE.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_FOG.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_FUNC.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_FUNC.H" />
+		<Unit filename="../sdk/gamesrc/G_LOCAL.H" />
+		<Unit filename="../sdk/gamesrc/G_MISC.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_NAV.H" />
+		<Unit filename="../sdk/gamesrc/G_PAWN.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_PHYS.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_SVCMDS.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_TARGET.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_UTILS.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_WEAPON.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_cmds.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_combat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_items.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_save.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/G_spawn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/M_BBOX.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/M_MOVE.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/M_PLAYER.H" />
+		<Unit filename="../sdk/gamesrc/P_HUD.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/P_TRAIL.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/P_VIEW.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/P_WEAPON.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/P_client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/Q_SHARED.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/Q_SHARED.H" />
+		<Unit filename="../sdk/gamesrc/VEHICLES.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/VEHICLES.H" />
+		<Unit filename="../sdk/gamesrc/VEH_DEFS.H" />
+		<Unit filename="../sdk/gamesrc/VOICE.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/VOICE.H" />
+		<Unit filename="../sdk/gamesrc/ai_bitch_tables.h" />
+		<Unit filename="../sdk/gamesrc/ai_bum_sit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/ai_bum_sit.h" />
+		<Unit filename="../sdk/gamesrc/ai_dog_tables.h" />
+		<Unit filename="../sdk/gamesrc/ai_punk_tables.h" />
+		<Unit filename="../sdk/gamesrc/ai_runt_tables.h" />
+		<Unit filename="../sdk/gamesrc/ai_shorty.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/ai_shorty.h" />
+		<Unit filename="../sdk/gamesrc/ai_shorty_tables.h" />
+		<Unit filename="../sdk/gamesrc/ai_skinny.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/ai_skinny_tables.h" />
+		<Unit filename="../sdk/gamesrc/ai_thug2_tables.h" />
+		<Unit filename="../sdk/gamesrc/ai_thug_sit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/ai_thug_tables.h" />
+		<Unit filename="../sdk/gamesrc/ai_whore_tables.h" />
+		<Unit filename="../sdk/gamesrc/ep_crystalpalace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/ep_posionville.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/ep_radiocity.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/ep_shipyards.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/ep_skidrow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/ep_steeltown.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/ep_trainyard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/g_ai_ents.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/g_ai_fight.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/g_ai_memory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/g_joe_misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/g_teamplay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/g_teamplay.h" />
+		<Unit filename="../sdk/gamesrc/g_trigger.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/voice_bitch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/voice_bitch.h" />
+		<Unit filename="../sdk/gamesrc/voice_punk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdk/gamesrc/voice_punk.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
